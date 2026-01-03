@@ -1,0 +1,3 @@
+5 rs samosa.txt
+3 rs samosa.txt
+reduce size of samasoa 

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Our Delivery Fleet | Samosa Junction</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" style="color: var(--white); text-decoration: none;"><i class="fas fa-chevron-left"></i></a>
+        <div class="logo">OUR <span style="color: var(--white);">FLEET</span></div>
+        <div class="cart-icon"><i class="fas fa-truck"></i></div>
+    </header>
+
+    <main style="margin-top: 80px;">
+        <div class="container">
+            <div class="section-title">
+                <p
+                    style="color: var(--primary); font-weight: 600; text-transform: uppercase; font-size: 0.8rem; margin-bottom: 5px;">
+                    Efficient & Fast</p>
+                <h2>Hyper-Local Delivery</h2>
+                <p style="color: #aaa; margin-top: 15px;">We use every mode of transport to ensure your samosas reach
+                    you piping hot, no matter where you are.</p>
+            </div>
+
+            <div class="card-grid">
+                <!-- Foot -->
+                <div class="premium-card animate-up">
+                    <div style="display: flex; align-items: center; gap: 20px;">
+                        <div
+                            style="background: rgba(245, 158, 11, 0.2); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-walking" style="font-size: 1.5rem; color: var(--primary);"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin-bottom: 0;">By Foot</h3>
+                            <p style="font-size: 0.85rem;">For ultra-short distances.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Normal Cycle -->
+                <div class="premium-card animate-up" style="animation-delay: 0.1s;">
+                    <div style="display: flex; align-items: center; gap: 20px;">
+                        <div
+                            style="background: rgba(245, 158, 11, 0.2); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-bicycle" style="font-size: 1.5rem; color: var(--primary);"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin-bottom: 0;">Normal Cycle</h3>
+                            <p style="font-size: 0.85rem;">Eco-friendly local delivery.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Electric Cycle -->
+                <div class="premium-card animate-up" style="animation-delay: 0.2s;">
+                    <div style="display: flex; align-items: center; gap: 20px;">
+                        <div
+                            style="background: rgba(245, 158, 11, 0.2); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-charging-station" style="font-size: 1.2rem; color: var(--primary);"></i>
+                            <i class="fas fa-bicycle"
+                                style="font-size: 1.5rem; color: var(--primary); margin-left: -10px;"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin-bottom: 0;">Electric Cycle</h3>
+                            <p style="font-size: 0.85rem;">Fast & sustainable.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scooter/Bike -->
+                <div class="premium-card animate-up" style="animation-delay: 0.3s;">
+                    <div style="display: flex; align-items: center; gap: 20px;">
+                        <div
+                            style="background: rgba(245, 158, 11, 0.2); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-motorcycle" style="font-size: 1.5rem; color: var(--primary);"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin-bottom: 0;">Bike / Scooter</h3>
+                            <p style="font-size: 0.85rem;">Long distance & bulk orders.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wholesale-banner animate-up"
+                style="margin-top: 40px; background: var(--glass); border: 1px solid var(--glass-border); color: var(--white);">
+                <h3 style="color: var(--primary);">Join Our Fleet?</h3>
+                <p>We are always looking for delivery partners with their own cycles or scooters.</p>
+                <a href="#" class="cta-btn">Apply Now</a>
+            </div>
+        </div>
+    </main>
+
+    <nav class="bottom-nav">
+        <a href="index.html" class="nav-link">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="menu.html" class="nav-link">
+            <i class="fas fa-utensils"></i>
+            <span>Menu</span>
+        </a>
+        <a href="fleet.html" class="nav-link active">
+            <i class="fas fa-truck"></i>
+            <span>Fleet</span>
+        </a>
+        <a href="#" class="nav-link">
+            <i class="fas fa-user"></i>
+            <span>Account</span>
+        </a>
+    </nav>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-up');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.animate-up').forEach(el => observer.observe(el));
+    </script>
+</body>
+
+</html>

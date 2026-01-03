@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Menu | Samosa Junction</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .menu-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .menu-item-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 12px;
+            object-fit: cover;
+            background: var(--glass);
+        }
+
+        .menu-item-info {
+            flex: 1;
+        }
+
+        .price-badge {
+            background: var(--primary);
+            color: var(--dark);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" style="color: var(--white); text-decoration: none;"><i class="fas fa-chevron-left"></i></a>
+        <div class="logo">OUR <span style="color: var(--white);">MENU</span></div>
+        <div class="cart-icon"><i class="fas fa-shopping-basket"></i></div>
+    </header>
+
+    <main style="margin-top: 80px;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Signature Samosas</h2>
+            </div>
+
+            <div class="menu-list">
+                <div class="menu-item animate-up">
+                    <div class="menu-item-img"><i class="fas fa-hot-tub-person"
+                            style="font-size: 2rem; color: var(--primary); display: flex; align-items: center; justify-content: center; height: 100%;"></i>
+                    </div>
+                    <div class="menu-item-info">
+                        <div style="display: flex; justify-content: space-between;">
+                            <h3 style="font-size: 1.1rem;">Classic Aloo Samosa</h3>
+                            <span class="price-badge">$0.50</span>
+                        </div>
+                        <p style="font-size: 0.8rem; color: #aaa;">Traditional spiced potato and peas filling.</p>
+                    </div>
+                </div>
+
+                <div class="menu-item animate-up" style="animation-delay: 0.1s;">
+                    <div class="menu-item-img"><i class="fas fa-cheese"
+                            style="font-size: 2rem; color: var(--primary); display: flex; align-items: center; justify-content: center; height: 100%;"></i>
+                    </div>
+                    <div class="menu-item-info">
+                        <div style="display: flex; justify-content: space-between;">
+                            <h3 style="font-size: 1.1rem;">Paneer Tikka Samosa</h3>
+                            <span class="price-badge">$0.80</span>
+                        </div>
+                        <p style="font-size: 0.8rem; color: #aaa;">Marinated paneer with grilled veggies.</p>
+                    </div>
+                </div>
+
+                <div class="menu-item animate-up" style="animation-delay: 0.2s;">
+                    <div class="menu-item-img"><i class="fas fa-mortar-pestle"
+                            style="font-size: 2rem; color: var(--primary); display: flex; align-items: center; justify-content: center; height: 100%;"></i>
+                    </div>
+                    <div class="menu-item-info">
+                        <div style="display: flex; justify-content: space-between;">
+                            <h3 style="font-size: 1.1rem;">Noodle Samosa</h3>
+                            <span class="price-badge">$0.60</span>
+                        </div>
+                        <p style="font-size: 0.8rem; color: #aaa;">Indo-Chinese style spicy noodle fill.</p>
+                    </div>
+                </div>
+
+                <div class="menu-item animate-up" style="animation-delay: 0.3s;">
+                    <div class="menu-item-img"><i class="fas fa-pizza-slice"
+                            style="font-size: 2rem; color: var(--primary); display: flex; align-items: center; justify-content: center; height: 100%;"></i>
+                    </div>
+                    <div class="menu-item-info">
+                        <div style="display: flex; justify-content: space-between;">
+                            <h3 style="font-size: 1.1rem;">Pizza Samosa</h3>
+                            <span class="price-badge">$0.90</span>
+                        </div>
+                        <p style="font-size: 0.8rem; color: #aaa;">Cheese, corn, and pizza sauce filling.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-title" style="margin-top: 40px;">
+                <h2>Side Chutneys</h2>
+            </div>
+
+            <div class="card-grid">
+                <div class="premium-card" style="padding: 15px;">
+                    <h3 style="font-size: 1rem;">Mint Chutney</h3>
+                    <p style="font-size: 0.8rem;">Spicy & Refreshing</p>
+                </div>
+                <div class="premium-card" style="padding: 15px;">
+                    <h3 style="font-size: 1rem;">Tamarind Sweet</h3>
+                    <p style="font-size: 0.8rem;">Tangy & Sweet</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <nav class="bottom-nav">
+        <a href="index.html" class="nav-link">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="menu.html" class="nav-link active">
+            <i class="fas fa-utensils"></i>
+            <span>Menu</span>
+        </a>
+        <a href="index.html#delivery" class="nav-link">
+            <i class="fas fa-truck"></i>
+            <span>Fleet</span>
+        </a>
+        <a href="#" class="nav-link">
+            <i class="fas fa-user"></i>
+            <span>Account</span>
+        </a>
+    </nav>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-up');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.animate-up').forEach(el => observer.observe(el));
+    </script>
+</body>
+
+</html>

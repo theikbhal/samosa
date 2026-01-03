@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Samosa Junction | Wholesale & Retail</title>
+    <meta name="description"
+        content="Premium Samosa wholesale and retail services. High quality samosas delivered by foot, cycle, bike, or scooter. Order now for your shop or event.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">SAMOSA <span style="color: var(--white);">JUNCTION</span></div>
+        <div class="cart-icon"><i class="fas fa-shopping-basket"></i></div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="hero.png" alt="Samosa Platter" class="hero-img">
+            <div class="hero-content">
+                <h1 class="animate-up">The Golden <br><span class="gradient-text">Crunch Experience</span></h1>
+                <p class="animate-up" style="animation-delay: 0.2s;">Hot. Fresh. Crispy.</p>
+                <a href="#order" class="cta-btn animate-up" style="animation-delay: 0.4s;">Order Now</a>
+            </div>
+        </section>
+
+        <div class="container">
+            <!-- Wholesale & Retail Section -->
+            <section id="services">
+                <div class="section-title">
+                    <p
+                        style="color: var(--primary); font-weight: 600; text-transform: uppercase; font-size: 0.8rem; margin-bottom: 5px;">
+                        Our Services</p>
+                    <h2>Wholesale & Retail</h2>
+                </div>
+
+                <div class="card-grid">
+                    <div class="premium-card animate-up">
+                        <i class="fas fa-store"
+                            style="font-size: 1.5rem; color: var(--primary); margin-bottom: 15px;"></i>
+                        <h3>Retail Sales</h3>
+                        <p>Perfect for individual cravings, families, and small gatherings. Grab your hot samosas fresh
+                            from our kitchen.</p>
+                    </div>
+
+                    <div class="premium-card animate-up" style="animation-delay: 0.1s;">
+                        <i class="fas fa-boxes-stacked"
+                            style="font-size: 1.5rem; color: var(--primary); margin-bottom: 15px;"></i>
+                        <h3>Wholesale Supply</h3>
+                        <p>Partner with us for your restaurant, cafe, or catering business. Guaranteed quality and
+                            volume discounts.</p>
+                    </div>
+                </div>
+
+                <div class="wholesale-banner animate-up" style="animation-delay: 0.2s;">
+                    <h3>Wholesale Partner?</h3>
+                    <p>Contact us for bulk pricing and daily delivery schedules for your outlets.</p>
+                    <a href="tel:+1234567890" class="cta-btn"
+                        style="background: var(--dark); color: var(--primary);">Contact Bulk Desk</a>
+                </div>
+            </section>
+
+            <!-- Delivery Modes Section -->
+            <section id="delivery">
+                <div class="section-title">
+                    <p
+                        style="color: var(--primary); font-weight: 600; text-transform: uppercase; font-size: 0.8rem; margin-bottom: 5px;">
+                        How we reach you</p>
+                    <h2>Smart Delivery Fleet</h2>
+                </div>
+
+                <div class="delivery-grid">
+                    <div class="delivery-item animate-up">
+                        <i class="fas fa-walking"></i>
+                        <p>By Foot</p>
+                    </div>
+                    <div class="delivery-item animate-up" style="animation-delay: 0.1s;">
+                        <i class="fas fa-bicycle"></i>
+                        <p>Normal Cycle</p>
+                    </div>
+                    <div class="delivery-item animate-up" style="animation-delay: 0.2s;">
+                        <i class="fas fa-charging-station"></i>
+                        <p>Electric Cycle</p>
+                    </div>
+                    <div class="delivery-item animate-up" style="animation-delay: 0.3s;">
+                        <i class="fas fa-motorcycle"></i>
+                        <p>Scooter / Bike</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Menu Snippet -->
+            <section id="menu">
+                <div class="section-title">
+                    <h2>Popular Picks</h2>
+                </div>
+
+                <div class="card-grid">
+                    <div class="premium-card animate-up">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <h3>Classic Aloo</h3>
+                            <span style="color: var(--primary); font-weight: 700;">$0.50</span>
+                        </div>
+                        <p>The timeless spiced potato filling with green peas.</p>
+                    </div>
+                    <div class="premium-card animate-up" style="animation-delay: 0.1s;">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <h3>Paneer Supreme</h3>
+                            <span style="color: var(--primary); font-weight: 700;">$0.80</span>
+                        </div>
+                        <p>Creamy paneer cubes with special masala blend.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <nav class="bottom-nav">
+        <a href="index.html" class="nav-link active">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="menu.html" class="nav-link">
+            <i class="fas fa-utensils"></i>
+            <span>Menu</span>
+        </a>
+        <a href="fleet.html" class="nav-link">
+            <i class="fas fa-truck"></i>
+            <span>Fleet</span>
+        </a>
+        <a href="#" class="nav-link">
+            <i class="fas fa-user"></i>
+            <span>Account</span>
+        </a>
+    </nav>
+
+    <script>
+        // Simple Intersection Observer for scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-up');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.animate-up').forEach(el => observer.observe(el));
+    </script>
+</body>
+
+</html>
